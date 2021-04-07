@@ -1,0 +1,33 @@
+.categories__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories__item {
+  width: 280px;
+  height: 266px;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+.categories__item-title {
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.categories__item-description {
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid $color-gray;
+}
+
+.categories__item-button {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
