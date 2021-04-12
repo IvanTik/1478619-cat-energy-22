@@ -4,26 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
       <img src="img/logo-mobile.svg" width="33" height="37" alt="Cat Energy">
+      <img src="img/footer-logo.svg" width="101" height="18" alt="Cat Energy">
     </a>
     <h1 class="visually-hidden">Сайт о питании для котов</h1>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list text__zeroing">
         <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link" href="#">
             Главная
           </a>
         </li>
         <li class="main-nav__item ">
-          <a class="main-nav__link" href="#">
+          <a class="main-nav__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
@@ -39,7 +42,7 @@
     <section class="main-promo">
       <h2 class="main-promo__title">Функциональное <br>питание для котов</h2>
       <p class="main-promo__text">Занялся собой? Займись котом!</p>
-      <a class="main-promo__button">Подобрать программу</a>
+      <a class="main-promo__button" href="form.html">Подобрать программу</a>
     </section>
     <section class="categories">
       <div class="categories__wrapper">
@@ -102,7 +105,7 @@
               <td class="example__result-amount">60 дней</td>
             </tr>
             <tr>
-              <td class="example__result-name">Затраты на питание:</td>
+              <td class="example__result-name example__result-name--upp">Затраты на питание:</td>
               <td class="example__result-amount">15 000 руб.</td>
             </tr>
           </tbody>
@@ -113,8 +116,8 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__inner">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+        <div class="contacts__inner contacts__inner--white">
+          <p class="contacts__slogan">Приглашаем <br>к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>

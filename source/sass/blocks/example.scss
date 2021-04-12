@@ -1,0 +1,25 @@
+.example__wrapper{
+  background-color: $color-bg-gray;
+  width: 320px;
+  height: 705px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  font-size: 14px;
+  line-height: 18px;
+  width: 280px;
+  height: 108px;
+}
+
+.example__result-amount{
+  text-transform: uppercase;
+}
+
+.example__result-name--upp{
+  text-transform: uppercase;
+}

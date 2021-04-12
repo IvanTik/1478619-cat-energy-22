@@ -1,0 +1,42 @@
+.extra__title{
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.extra__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 282px;
+}
+
+.extra__item{
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $color-border-gray;
+}
+
+.extra__item-title{
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-menu-item--tablet;
+}
+
+.extra__item-info{
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+  font-style: $sec-font;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.extra__item-button {
+  text-decoration: none;
+  color: $color-menu-items;
+  width: 280px;
+  height: 40px;
+  background-color: $green;
+  color: $color-menu-item--desktop;
+}
