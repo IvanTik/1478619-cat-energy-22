@@ -1,15 +1,23 @@
-.contacts__wrapper{
+.contacts {
+  background-color: $bg-color;
+}
+
+.contacts__wrapper {
   width: 320px;
   height: 114px;
 }
 
-.contacts__inner{
+.contacts__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.contacts__slogan{
+.contacts__inner--white {
+  background-color: $color-menu-item--desktop;
+}
+
+.contacts__slogan {
   font-size: 16px;
   line-height: 18px;
   width: 140px;
@@ -17,7 +25,7 @@
   text-transform: uppercase;
 }
 
-.contacts__address{
+.contacts__address {
   font-size: 14px;
   line-height: 20px;
   width: 140px;
