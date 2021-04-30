@@ -1,27 +1,95 @@
+.categories {
+  margin: 0;
+  padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 30px;
+  }
+}
+
+.categories__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
 .categories__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .categories__item {
   width: 280px;
-  height: 266px;
   background-color: $bg-color;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+}
+
+.categories__item--slim {
+  &::before {
+    top: 25px;
+    left: 22px;
+  }
+
+  &::after {
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+  }
+
+  background-image: url("../../img/cat-back-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.categories__item--pro {
+  background-image: url("../../img/cat-back-pro.svg");
+  background-repeat: no-repeat;
 }
 
 .categories__item-title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-align: center;
+  font-family: $base-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin-left: 52px;
+  }
 }
 
 .categories__item-description {
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid $color-gray;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-left: 52px;
+  }
 }
 
 .categories__item-button {
@@ -29,5 +97,17 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: $color-menu-items;
+  padding: 15px 18px;
+  display: block;
+  background-image: url("../../img/index-arrow.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position-x: 118px;
+  background-position-y: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 52px;
+    padding-left: 0;
+  }
 }

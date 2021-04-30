@@ -1,15 +1,19 @@
 .catalog {
   padding-top: 25px;
   margin-bottom: 28px;
+  margin: 0;
+  // padding: 0 20px 0 20px;
 }
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 38px;
-  padding: 0 20px;
+  margin-top: 27px;
+  padding-bottom: 41px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid $color-border-main;
 }
 
 .catalog__list {

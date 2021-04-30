@@ -1,24 +1,82 @@
-.main-promo__title {
-  width: 250px;
-  margin-bottom: 25px;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-}
+ .main-promo {
+   position: relative;
 
-.main-promo__text {
-  width: 250px;
-  margin-bottom: 28px;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  text-transform: uppercase;
-}
+   margin-bottom: 22px;
 
-.main-promo__button {
-  background-color: $green;
-  width: 280px;
-  height: 40px;
-  color: $color-menu-item--desktop;
-  text-decoration: none;
-}
+   &::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: -1;
+
+     height: 305px;
+   }
+
+   background-image: url("../img/index-background-cat.png");
+   background-repeat: no-repeat;
+   background-position: center top;
+ }
+
+ .main-promo__title {
+   margin: 0;
+   padding-top: 27px;
+   width: 100%;
+   margin-bottom: 25px;
+   font-weight: normal;
+   font-size: 36px;
+   line-height: 36px;
+   color: $color-menu-item--desktop;
+   text-align: center;
+
+   @media (min-width: $tablet-width) {
+     color: $color-menu-items;
+     font-size: 60px;
+     line-height: 60px;
+     margin-left: 117px;
+     text-align: left;
+   }
+ }
+
+ .main-promo__text {
+   color: $color-menu-item--desktop;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 28px;
+   font-size: 14px;
+   line-height: 14px;
+   text-align: center;
+   text-transform: uppercase;
+
+   @media (min-width: $tablet-width) {
+     color: $color-menu-items;
+     font-size: 20px;
+     line-height: 20px;
+     margin-left: 117px;
+     text-align: left;
+   }
+ }
+
+ .main-promo__button {
+   padding: 0;
+   margin: 0 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   color: $color-menu-items;
+   width: 280px;
+   height: 40px;
+   background-color: $green;
+   color: $color-menu-item--desktop;
+   font-size: 14px;
+   line-height: 18px;
+ }
+
+ .main-promo__picture {
+   position: relative;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 3px;
+ }

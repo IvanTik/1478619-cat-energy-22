@@ -1,3 +1,17 @@
+.catalog-item {
+  width: 280px;
+  border-bottom: 1px solid $color-border-main;
+  padding: 0 20px;
+  padding-bottom: 25px;
+}
+
+.catalog-item__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-menu-item--tablet;
+}
+
 .catalog-item__title a {
   text-decoration: none;
   color: $color-menu-items;
@@ -5,32 +19,42 @@
 }
 
 .catalog-item__button {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: $color-menu-item--desktop;
   width: 280px;
   height: 40px;
   background-color: $green;
-}
-
-.button--gray {
-  color: $special_dark-grey;
-  background-color: $bg-color;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .catalog-item__info {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+}
 
-  td {
-    padding: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special_dark-grey;
+.catalog-item__table-column {
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
 
-    &:last-child {
-      text-align: right;
-    }
+  &:last-child {
+    text-align: right;
   }
+}
+
+.catalog-item__description {
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
 }

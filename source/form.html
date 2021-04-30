@@ -5,16 +5,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="33" height="37" alt="Cat Energy">
-      <img src="img/footer-logo.svg" width="101" height="18" alt="Cat Energy">
-    </a>
     <h1 class="visually-hidden">Сайт о питании для котов</h1>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="Cat Energy">
+        <img src="img/footer-logo.svg" width="101" height="18" alt="Cat Energy">
+      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -25,7 +26,7 @@
           </a>
         </li>
         <li class="main-nav__item ">
-          <a class="main-nav__link" href="#">
+          <a class="main-nav__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
@@ -136,7 +137,7 @@
         </fieldset>
         <div class="form__actions field-actions">
           <button class="field-actions__button">Отправить заявку</button>
-          <p class="field-actions__text">*--Обязательные поля</p>
+          <p class="field-actions__text">*&mdash; Обязательные поля</p>
         </div>
       </form>
     </section>
@@ -145,7 +146,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__inner">
           <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
         </div>
       </div>
       <div class="contacts__map">

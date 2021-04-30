@@ -1,6 +1,20 @@
 .form {
   padding-top: 25px;
   padding-bottom: 33px;
+  border-style: none;
+}
+
+.form__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
+}
+
+.form__main-form {
+  width: 280px;
+  padding: 0 20px 0 20px;
+  margin: 0;
 }
 
 .form__header {
@@ -25,6 +39,14 @@
   text-transform: uppercase;
 }
 
-.form__fieldset-list{
+.form__fieldset-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+// .form__fieldset-item{
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   padding-bottom: 13px;
+// }
