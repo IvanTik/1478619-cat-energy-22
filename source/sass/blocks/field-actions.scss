@@ -1,0 +1,31 @@
+.field-actions {
+  margin: 0;
+  padding: 0;
+}
+
+.field-actions__button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: $color-menu-items;
+  width: 280px;
+  height: 40px;
+  background-color: $green;
+  color: $color-menu-item--desktop;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  border: 0;
+}
+
+.field-actions__text {
+  display: block;
+  text-align: center;
+  font-family: $sec-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-menu-items;
+  margin: 0;
+  padding-top: 21px;
+}

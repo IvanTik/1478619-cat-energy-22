@@ -1,16 +1,19 @@
 //  Colors
-$base-font:"Oswald",
-"Arial",
-sans-serif;
-$sec-font: "Arial",
-sans-serif;
-$color-gray: #D9D9D9;
-$color-bg-gray: #EAEAEA;
-$bg-color: #F2F2F2;
+$base-font:"Oswald", "Arial", sans-serif;
+$sec-font: "Arial", sans-serif;
+$color-gray: #d9d9d9;
+$color-bg-gray: #eaeaea;
+$bg-color: #f2f2f2;
 $special_dark-grey: #444444;
-$color-menu-items: #111111;
+$color-foot-special: #111111;
+$color-menu-items: #000000;
 $color-menu-item--tablet: #222222;
 $color-menu-item--desktop: #ffffff;
-$color-border-gray: #CDCDCD;
+$color-border-gray: #cdcdcd;
+$color-border-main: #E6E6E6;
 
 $green: #68b738;
+//  Breakpoints
+$mobile-only-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
