@@ -1,7 +1,13 @@
 .page-body {
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   margin: 0;
-  padding: 0;
+  color: var(--black);
+  min-height: 100%;
+  position: relative;
+
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+  }
 }

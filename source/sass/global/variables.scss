@@ -1,19 +1,21 @@
-//  Colors
-$base-font:"Oswald", "Arial", sans-serif;
-$sec-font: "Arial", sans-serif;
-$color-gray: #d9d9d9;
-$color-bg-gray: #eaeaea;
-$bg-color: #f2f2f2;
-$special_dark-grey: #444444;
-$color-foot-special: #111111;
-$color-menu-items: #000000;
-$color-menu-item--tablet: #222222;
-$color-menu-item--desktop: #ffffff;
-$color-border-gray: #cdcdcd;
-$color-border-main: #e6e6e6;
+/* variables */
 
-$green: #68b738;
-//  Breakpoints
-$mobile-only-width: 767px;
-$tablet-width: 768px;
-$desktop-width: 1440px;
+:root {
+  --black: #000000;
+  --basic_green: #68b738;
+  --basic_green2: #5eaa2f;
+  --background_grey: #eaeaea;
+  --white: #ffffff;
+  --special_dark-grey: #444444;
+  --special_dark-grey-2: #222222;
+  --basic_grey: #f2f2f2;
+  --black_light: #111111;
+  --stroke_grey: #e6e6e6;
+  --offers_line: #d9d9d9;
+  --example_line: #cdcdcd;
+  --form_box: #e7e7e7;
+  --catalog_plus: #d3d3d3;
+  --error: #ff8282;
+  --radio: #adb5bd;
+  --hover_radio: #bababa;
+}
