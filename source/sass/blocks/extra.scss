@@ -1,14 +1,15 @@
 .extra {
-  width: 320px;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 .extra__title {
-  width: 280px;
+  width: 100%;
+  display: flex;
+  margin: 0;
   justify-content: center;
   align-self: center;
   font-size: 24px;
@@ -16,21 +17,37 @@
   font-weight: 400;
   color: $color-menu-items;
   padding-bottom: 36px;
-  border-bottom: 1px solid $color-border-gray;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    width: 52px;
+    height: 2px;
+    margin-left: 22px;
+    margin-top: 14px;
+    background-color: $green;
+  }
+}
+
+.extra__title--description {
+  padding-left: 20px;
 }
 
 .extra__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 282px;
+  margin-bottom: 39px;
 }
 
 .extra__item {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid $color-border-gray;
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 
 .extra__item-title {
@@ -73,21 +90,41 @@
 }
 
 .extra__banner {
-  padding: 0 60px 0 60px;
-  width: 160px;
+  width: 280px;
+  min-height: 289px;
+  margin: 0 auto;
+  background-color: #75b94c;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top 60px, center;
+  margin-bottom: 35px;
 }
 
 .extra__banner-description {
+  font-family: $sec-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   margin: 0;
   padding: 0;
+  color: $color-menu-item--desktop;
+  padding-top: 186px;
+  padding-left: 58px;
+  padding-right: 61px;
 }
 
-.extra__item-table-column{
+.extra__item-table-column {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   font-family: $sec-font;
+}
+
+.extra__item-table-column--big {
+  text-transform: uppercase;
+}
+
+.extra__item-title--line{
+  padding-top: 13px;
+  border-top: 1px solid $color-border-gray;
 }

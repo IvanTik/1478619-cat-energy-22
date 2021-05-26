@@ -12,9 +12,17 @@
   color: black;
   margin: 0;
   padding: 0;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: right;
     flex-wrap: wrap;
   }
 }
@@ -36,6 +44,7 @@
 .main-nav__item :not(:nth-child(3)) {
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    padding-bottom: 10px;
   }
 }
 
@@ -52,10 +61,11 @@
   z-index: 2;
   display: block;
   width: 55px;
-  height: 50px;
+  height: 43px;
   background-color: $color-menu-item--desktop;
   cursor: pointer;
   border: none;
+  padding: 0;
 
   &:hover,
   &:active {
@@ -126,11 +136,18 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color-menu-item--desktop;
-  // border-top: 1px solid $color-border-main;
   border-bottom: 1px solid $color-border-main;
-  @media (min-width: $tablet-width){
+
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
     border: none;
+  }
+}
+
+.main-nav__item {
+  &--active {
+    // opacity: 0.6;
+    border-bottom: 2px solid $green;
   }
 }
